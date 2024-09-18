@@ -32,7 +32,7 @@ A good affordance is a desgin feature that clearly communicates the way an objec
 
 As an image is worth a thousand words, here is an example of a door handle that has a good affordance.
 
-![3 doors with different handles](/public/hw1/1-DoorAffordances-768x423.png)
+![3 doors with different handles](public/hw1/1-DoorAffordances-768x423.png)
 
 With those three handles the user can have a clear idea of how the door is working either he should push, pull or turn it.  
 The left door has a handle that can be twisted, the middle door should be pulled and the right door should be pushed. 
