@@ -1,10 +1,10 @@
 ---
-title: 1st touch with Human Computer Interaction (HCI)
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: "1st touch with Human Computer Interaction (HCI)"
+publishDate: "2020-03-04 00:00:00"
+img: "/assets/stock-3.jpg"
+img_alt: "Pearls of silky soft white cotton, bubble up under vibrant lighting"
 description: |
-  For our first lecture we had to think about basic Human Computer Interaction problem.
+  For our first lecture, we had to think about basic Human Computer Interaction problems.
 tags:
   - HCI
 ---
