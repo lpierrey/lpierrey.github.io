@@ -32,7 +32,7 @@ A good affordance is a desgin feature that clearly communicates the way an objec
 
 As an image is worth a thousand words, here is an example of a door handle that has a good affordance.
 
-![3 doors with different handles](public/hw1/1-DoorAffordances-768x423.png)
+![3 doors with different handles](/hw1/1-DoorAffordances-768x423.png)
 
 With those three handles the user can have a clear idea of how the door is working either he should push, pull or turn it.  
 The left door has a handle that can be twisted, the middle door should be pulled and the right door should be pushed. 
@@ -53,7 +53,7 @@ Here are some example from my daily life that have good and bad affordance :
 
 The Gestalt Laws are principles of human perception that explain how we group similar elements, identify patterns, and simplify complex images when perceiving objects. Designers apply these principles to arrange content on websites and other interfaces to make them both visually appealing and easy to comprehend.
 
-![Gestalt's Law](/public/hw1/gestalt-laws-of-perceptual-organization-2795835-01-8f488f3d191048a0bc42e23ff9470042.png)
+![Gestalt's Law](/hw1/gestalt-laws-of-perceptual-organization-2795835-01-8f488f3d191048a0bc42e23ff9470042.png)
 
 Let's explore the different laws according to the illustration : 
 
