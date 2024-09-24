@@ -39,13 +39,17 @@ The left door has a handle that can be twisted, the middle door should be pulled
 
 Here are some example from my daily life that have good and bad affordance : 
 
+<span style="font-size: 24px;"> **Bad Affordance** </span> 
+
+![Bad affordance](/hw1/IMG_2784.JPG)
+
+By seeing the tab, we don't know which way we need to turn it in order to have cold or hot water. That could be fixed by just adding red color for hot and a blue color for cold.
+
 <span style="font-size: 24px;"> **Good Affordance** </span> 
 
+![Good affordance](/hw1/IMG_2785.JPG)
 
-
-
-
-
+It is easy to know how does this coffee machine work. By clicking on left small cup, we know that we will have a small coffee and by clicking on the right big cup, we know thaht we will have a big coffee.
 
 *** 
 
@@ -65,6 +69,22 @@ Let's explore the different laws according to the illustration :
   * **Law of Prägnanz** : When you're presented with a set of ambiguous or complex objects, your brain will make them appear as simple as possible.
 
 
+*** 
+
+<span style="font-size: 30px; color: black;">**Dark Designs**</span>
 
 
+Dark patterns, also known as deceptive design or deceptive patterns, are essentially tricks. Websites and apps use dark patterns to manipulate users into making decisions they wouldn’t have otherwise made—like subscribing to a service you won’t use, agreeing to marketing emails you didn’t want, or giving up your personal data. 
 
+Businesses and consumers alike need to be aware of these patterns. Knowing how to recognize dark patterns means you’re far less likely to fall victim to one or to unintentionally introduce one in your own organization’s website or app. 
+
+Let's see two examples of Dark designs and see how we could improve them : 
+
+* **Confirm Shaming** : Everyone has ever experienced a cookie pop-up which was forcing and pleading with you to accept it, as if you don't accept it, the earth would stop turning ? That's confirm Shaming, in which the user os emotionally manipulated into perfofrming some action they wouldn't do otherwise. This could be solved by just making a small window which just notify something and which can be easily closed.
+
+![Confirm Shaming](/hw1/confirmshaming-1024x577.jpg)
+
+
+* **Nagging** : When you want to access to a website or a service, but everytime you navigate to a new page, you are asked for consentment to data processing. If it happened only one time, it would be ok, but at soon as the window pop up at everyu click it becomes nagging.
+
+![Nagging](/hw1/mezzell_nagging_alternative.png)
