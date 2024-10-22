@@ -1,35 +1,153 @@
 ---
 title: Creation of this portfolio
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/logo_astro.jpeg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Short summary of this portfolio's development.
 tags:
-  - Design
   - Dev
-  - User Testing
+  - Portfolio
 ---
 
-## Level-two heading
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+<blockquote>
+  <span style="font-size: 32px;">Motivations</span>
+</blockquote>
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+In my final year as an engineering student, having an online portfolio has become essential. A website portfolio provides a practical and interactive way to showcase my work to recruiters and peers. In this first blog post, I'll guide you through the process of creating this website, which you can follow as a tutorial.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+<blockquote>
+  <span style="font-size: 28px;">Technologies</span>
+</blockquote>
 
-### Level-three heading
+For this portfolio, we'll use GitHub Pages to host the site and Astro.build as a template provider.
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+GitHub Pages offers free hosting for any project, with the page linked to your personal or company account. If you already own a custom domain (which can be purchased through DNS providers), you can set it up as your website's URL. However, with the free standard account, you can only host one project at a time.
 
-### Level-three heading
+Astro.build offers a wide range of templates for different purposes, such as portfolios, blogs, and marketing pages.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+To avoid redundancy and keep things concise, I'll include links to relevant tutorials for each service as needed.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
 
-#### Level-four heading
+<blockquote>
+  <span style="font-size: 38px;">Starting our project</span>
+</blockquote>
 
-- We noted this
-- And also this other point
+Begin by creating a working folder on your local device. This folder will hold all your code and assets.
+
+<blockquote>
+  <span style="font-size: 30px;">Selecting a Template and Initiating the Project</span>
+</blockquote>
+
+
+Visit Astro’s website and choose a template that fits your style and industry (make sure to pick a different template from mine, although there's no specific reason for this request).
+
+Once you've found the right template, follow this tutorial to set it up.
+
+Ensure you load the project into the folder you created earlier.
+
+Before proceeding, double-check that the folder contains the Astro template files.
+
+
+<blockquote>
+  <span style="font-size: 30px;">Initializing Your Git Repository</span>
+</blockquote>
+
+
+A GitHub repository is an online directory that stores your project files, which will be used to display your website. Anytime you want to update your site—whether adding a new blog post or updating your career details—these are the files you'll modify.
+
+Start by creating a project on GitHub by following this tutorial.
+
+Your project name must follow the format **.github.io**.
+
+Next, clone your repository:
+
+```
+> cd /your_local_project_folder
+> git clone https://www.github.com/<USERNAME>/<USERNAME>.github.io.git 
+```
+
+This links your local folder to the remote repository.
+
+When done, we must upload our files.
+
+```
+> git add * 
+> git commit -m "Initial Website Commit"
+> git push
+
+```
+
+<blockquote>
+  <span style="font-size: 30px;">Setting your Astro template as a GitHub page</span>
+</blockquote>
+
+We can deploy our Astro website using GitHub Actions.
+
+1. Copy/Paste and modify this block of code to your astro.config.mjs file.
+
+```
+import { defineConfig } from 'astro/config'
+
+export default defineConfig({
+  site: 'https://astronaut.github.io',
+})
+```
+
+This file should be located at the root of your project (in the original folder).
+
+Customize it to fit your website’s URL.
+
+2. Create a new file in your project at .github/workflows/deploy.yml and paste in the YAML below.
+Create the folders and the file. Then paste this code: 
+
+```
+name: Deploy to GitHub Pages
+
+on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
+  push:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        # with:
+            # path: . # The root location of your Astro project inside the repository. (optional)
+            # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
+            # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+```
+
+3. On GitHub, go to your repository’s Settings tab and find the Pages section of the settings.
+
+4. Choose GitHub Actions as the Source of your site.
+
+5. Commit the new workflow file and push it to GitHub.
+
+Everything should now be online ! (This was a shameless copy of * [Astro's Tutorial](https://docs.astro.build/en/guides/deploy/github/) and Thibault Ellong Tutorial)
