@@ -4,7 +4,7 @@ publishDate: 2020-03-02 00:00:00
 img: /assets/logo_astro.jpeg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  Short summary of this portfolio's development.
+  Short summary of this portfolio's development. This covers Lab 2.
 tags:
   - Dev
   - Portfolio
