@@ -1,7 +1,7 @@
 ---
 title: "Enhance human abilities with AR"
 publishDate: "2020-03-04 00:00:00"
-img: "/src/content/work/image-15.png"
+img: "/assets/image-15.png"
 img_alt: "Pearls of silky soft white cotton, bubble up under vibrant lighting"
 description: |
   Enhancing humman abilities in the age of augmented reality. It covers Lecture 7,8 and 9.

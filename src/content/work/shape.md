@@ -1,7 +1,7 @@
 ---
 title: "Smartphones and Apps"
 publishDate: "2020-03-04 00:00:00"
-img: "/src/content/work/image-16.png"
+img: "/assets/image-16.png"
 img_alt: "Pearls of silky soft white cotton, bubble up under vibrant lighting"
 description: |
   It covers lecture 10,11 and 12
