@@ -46,3 +46,5 @@ My prototype is pretty much the one I've tried to draw on my first idea (not a g
 <blockquote>
   <span style="font-size: 32px;">Feedback</span>
 </blockquote>
+
+I asked several person of my surrounding and they pretty like the idea. The main point was the accuracy of the device. They scared that the device could have some error while processing, and I argued them that it is true, but they still have their own mind to judge things, it's a device which is here to assist a human being and if it appears that it fails to recognize something, the user has its own eyes and can still perceive things. s well the autonomy of the device is a problem and the robustness of it. That's true that to make it work in such activities such as biking, we nered to ensure that the autonomy is enough and as well that it can be resistant.
