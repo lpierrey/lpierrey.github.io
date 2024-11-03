@@ -6,7 +6,7 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   Discover my profile
 tags:
--profile
+- profile
 ---
 
 
