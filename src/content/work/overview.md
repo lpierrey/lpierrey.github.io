@@ -4,10 +4,9 @@ publishDate: 2020-03-02 00:00:00
 img: /assets/Telecom-sudparis (1)_page-0001.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  Short summary of this portfolio's development. This covers Lab 2.
+  Discover my profile
 tags:
-  - Dev
-  - Portfolio
+-profile
 ---
 
 
